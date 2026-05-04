@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BrainCell Market</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #eee;
+      text-align: center;
+      margin: 0;
+    }
+    header {
+      padding: 40px;
+      background: linear-gradient(90deg, #6a00ff, #00d4ff);
+      color: white;
+    }
+    .container {
+      padding: 30px;
+    }
+    .product {
+      background: #1c1c1c;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px auto;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    button {
+      background: #00d4ff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #00aacc;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 12px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🧠 BrainCell Market</h1>
+  <p>Because you might need one.</p>
+</header>
+
+<div class="container">
+  
+  <div class="product">
+    <h2>Basic Braincell</h2>
+    <p>+1 IQ (maybe)</p>
+    <p>$0.99</p>
+    <button onclick="buy('Basic Braincell')">Buy</button>
+  </div>
+
+  <div class="product">
+    <h2>Premium Braincell</h2>
+    <p>Think slightly faster</p>
+    <p>$4.99</p>
+    <button onclick="buy('Premium Braincell')">Buy</button>
+  </div>
+
+  <div class="product">
+    <h2>Gamer Braincell</h2>
+    <p>Improves aim by 0.01%</p>
+    <p>$9.99</p>
+    <button onclick="buy('Gamer Braincell')">Buy</button>
+  </div>
+
+</div>
+
+<footer>
+  <p>Disclaimer: No actual braincells are sold. Results may vary wildly.</p>
+</footer>
+
+<script>
+  function buy(product) {
+    alert("You bought: " + product + " 🧠");
+  }
+</script>
+
+</body>
+</html>
